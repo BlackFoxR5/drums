@@ -1,4 +1,4 @@
-document.querySelector("body");
+const body = document.querySelector("body");
 
 const crash = document.getElementById("crash");
 const snare = document.getElementById("snare");
@@ -8,7 +8,7 @@ const floortom = document.getElementById("floor-tom");
 const ride = document.getElementById("ride");
 
 
-addEventListener("keydown", (e) => {
+body.addEventListener("keydown", (e) => {
     if (e.key === "a") { // crash
         crash.currentTime = 0;
         crash.play();
